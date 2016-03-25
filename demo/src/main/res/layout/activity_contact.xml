@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.ogaclejapan.engineerscenter.Contact">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/zizo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Zidan"
+                android:padding="3dp"
+                android:textColor="#464646"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/callzizo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/call" />
+
+                <ImageButton
+                    android:id="@+id/fbzizo"
+                    android:layout_width="48dp"
+
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facebook" />
+
+                <ImageButton
+                    android:id="@+id/zizogm"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gmail" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/mansy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="El Mansy"
+                android:textColor="#464646"
+                android:textSize="22sp"
+                android:padding="3dp"
+
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/callmansy"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/call" />
+
+                <ImageButton
+                    android:id="@+id/fbmansy"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gm" />
+
+                <ImageButton
+                    android:id="@+id/mansygm"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gmail" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shrief" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sherif"
+                android:padding="3dp"
+
+                android:textColor="#464646"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/callshrif"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/call" />
+
+                <ImageButton
+                    android:id="@+id/fbshrief"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facebook" />
+
+                <ImageButton
+                    android:id="@+id/shriefgm"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#00000000"
+                    android:onClick="contanctclick"
+                    android:paddingBottom="5dp"
+
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gmail" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/lo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/texx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lo"
+        android:layout_centerHorizontal="true"
+        android:text="تابع ورقك لحظه بلحظه.."
+        android:textColor="#06b621"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/texx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texx"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:text="Just Start With US!"
+        android:textColor="@color/path_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottomlinear"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/path_fab"
+        android:padding="5dp"
+        android:text="؟"
+
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/bottomlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/fbpage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="#00ffffff"
+            android:onClick="facebookintent"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+
+
+            android:src="@drawable/facebook" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="#00ffffff"
+            android:onClick="opencontactpage"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/contact" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/menu_year"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scrim"
+        android:visibility="invisible">
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="78dp"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom"
+            app:arc_radius="200dp">
+
+            <Button
+                style="@style/Item.Path"
+                android:text="إعدادى"
+                android:textColor="@color/path_orange"
+                android:textStyle="bold"
+                app:arc_angle="20" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="أولى"
+                android:textColor="@color/path_blue"
+                android:textStyle="bold"
+                app:arc_angle="55" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="تانيه"
+                android:textColor="@color/path_black"
+
+                android:textStyle="bold"
+                app:arc_angle="90" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="تالته"
+
+                android:textColor="@color/path_green"
+                android:textStyle="bold"
+                app:arc_angle="125" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="رابعه"
+                android:textColor="@color/path_purple"
+                android:textStyle="bold"
+                app:arc_angle="160" />
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_major"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/scrim"
+        android:visibility="invisible">
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_major"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="78dp"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom"
+            app:arc_radius="200dp">
+
+            <Button
+                style="@style/Item.Path2"
+                android:text="كهربا"
+                android:textColor="@color/path_orange"
+                app:arc_angle="35" />
+
+            <Button
+                style="@style/Item.Path2"
+                android:text="اتصالات"
+
+                android:textColor="@color/path_blue"
+                app:arc_angle="70" />
+
+            <Button
+                style="@style/Item.Path2"
+                android:text="مدنى"
+
+                android:textColor="@color/path_black"
+
+                app:arc_angle="105" />
+
+            <Button
+                style="@style/Item.Path2"
+                android:text="ميكانيكا"
+
+                android:textColor="@color/path_green"
+                app:arc_angle="140" />
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

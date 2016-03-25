@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customborder"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#efd762"
+            android:text="Edit"
+
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#8ae77e"
+            android:text="Done" />
+
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="اسم المعيد"
+            android:textColor="#009688"
+            android:textColorHint="#009688"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#009688"
+            android:gravity="center"
+            android:tag="nametag"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@android:drawable/ic_delete" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#f56666"
+
+            android:text="+"
+
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/int_shr7"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+
+            android:paddingRight="8dp"
+            android:tag="shr7tag"
+            android:text="0"
+            android:textColor="#F2992E"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/mins1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#35a7f9"
+
+            android:text="-"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+
+            android:paddingRight="8dp"
+            android:text="شرح"
+            android:textColor="#F2992E"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/tog1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:maxWidth="50dp"
+            android:tag="t1tag" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#f56666"
+
+            android:text="+"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/int_morg"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:tag="morag3atag"
+
+
+            android:text="0"
+            android:textColor="#56BC8A"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/mins2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:backgroundTint="#35a7f9"
+
+            android:text="-"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="مراجعه"
+
+            android:textColor="#56BC8A"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/tog2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="50dp"
+            android:tag="t2tag"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:backgroundTint="#f56666"
+            android:text="+"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/int_sec"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+
+
+            android:tag="sectag"
+            android:text="0"
+            android:textColor="#4AA8D8"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/mins3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+
+            android:backgroundTint="#35a7f9"
+            android:text="-"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="سكشن"
+            android:textColor="#4AA8D8"
+
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/tog3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="50dp"
+            android:tag="t3tag"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#f56666"
+
+            android:text="+"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/int_sheet"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+
+            android:paddingRight="8dp"
+
+            android:tag="sheettag"
+            android:text="0"
+            android:textColor="#D95E40"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/mins4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:backgroundTint="#35a7f9"
+            android:text="-"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="شيت"
+            android:textColor="#D95E40"
+
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/tog4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="50dp"
+            android:tag="t4tag"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#f56666"
+
+            android:text="+"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/int_emt7an"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+
+            android:tag="emt7anatag"
+            android:text="0"
+            android:textColor="#1774E6"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/mins5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#35a7f9"
+
+            android:text="-"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+
+            android:paddingRight="8dp"
+            android:text="حل إمتحانات"
+            android:textColor="#1774E6"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/tog5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="50dp"
+            android:tag="t5tag"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l6"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edidtext_note"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="ملاحظات اخرى"
+            android:lines="2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColorHint="#E62F17" />
+
+        <TextView
+            android:id="@+id/text_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="2"
+
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:tag="notetag"
+            android:textColor="#E62F17"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Switch
+            android:id="@+id/tog6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="50dp"
+            android:tag="t6tag"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

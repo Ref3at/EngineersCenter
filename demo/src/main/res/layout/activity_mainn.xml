@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/eng"
+        android:orientation="vertical"
+        tools:context="com.ogaclejapan.testengcenter.MainActivity"
+        tools:ignore="MergeRootFrame">
+
+        <FrameLayout
+            android:id="@+id/years_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:id="@+id/majors_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/subjects_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:id="@+id/branches_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/facebook"
+            android:id="@+id/fbpage"
+            android:onClick="facebookintent"
+
+
+            android:background="#00ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact"
+            android:onClick="opencontactpage"
+
+            android:background="#00ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>
